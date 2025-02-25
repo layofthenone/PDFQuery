@@ -49,22 +49,22 @@ Install Poppler and Tesseract as described in the Prerequisites section.
 - `tesseract --version`  # Should return Tesseract version
 
 ## Option 2: Using Docker
-### Install Docker:
+1. #### Install Docker:
 
 Download and install Docker Desktop from Docker Hub.
-#### Clone the Repository:
+2. #### Clone the Repository:
 
 `git clone https://github.com/your-username/PDFQuery.git`
 `cd PDFQuery`
-#### Build the Docker Image:
+3. #### Build the Docker Image:
 
 `docker build -t pdfquery:latest` .
-Run the Docker Container:
+4. #### Run the Docker Container:
 Replace /path/to/your/pdfs with the absolute path to your PDF folder (e.g., /home/user/pdfs on Linux/Mac or C:/Users/YourName/pdfs on Windows).
 
 `docker run -p 8501:8501 -v /path/to/your/pdfs:/app/pdfs pdfquery:latest`
 On Windows, use forward slashes and escape backslashes (e.g., -v C:/Users/YourName/pdfs:/app/pdfs).
-Access the App:
+5. #### Access the App:
 Open your browser and go to `http://localhost:8501`.
 
 
