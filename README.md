@@ -51,7 +51,7 @@ Install Poppler and Tesseract as described in the Prerequisites section.
 #### Run the Application:
 
 `streamlit run main.py`
-This will launch the app in your default browser at [streamlit](http://localhost:8501).
+This will launch the app in your default browser at `http://localhost:8501`.
 #### Using the App:
 
 Enter the folder path containing your PDF files (e.g., C:/Users/YourName/pdfs).
