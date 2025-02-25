@@ -1,5 +1,7 @@
 # PDFQuery
 
+
+
 A Streamlit-based application to search through PDF files in a folder and either view specific pages within the app or open them in a browser at the exact page where the search term was found.
 
 ## Features
@@ -45,6 +47,25 @@ Install Poppler and Tesseract as described in the Prerequisites section.
 #### Verify installations:
 - `pdftoppm -v`  # Should return Poppler version
 - `tesseract --version`  # Should return Tesseract version
+
+## Option 2: Using Docker
+### Install Docker:
+
+Download and install Docker Desktop from Docker Hub.
+#### Clone the Repository:
+
+`git clone https://github.com/your-username/PDFQuery.git`
+`cd PDFQuery`
+#### Build the Docker Image:
+
+`docker build -t pdfquery:latest` .
+Run the Docker Container:
+Replace /path/to/your/pdfs with the absolute path to your PDF folder (e.g., /home/user/pdfs on Linux/Mac or C:/Users/YourName/pdfs on Windows).
+
+`docker run -p 8501:8501 -v /path/to/your/pdfs:/app/pdfs pdfquery:latest`
+On Windows, use forward slashes and escape backslashes (e.g., -v C:/Users/YourName/pdfs:/app/pdfs).
+Access the App:
+Open your browser and go to `http://localhost:8501`.
 
 
 ### Usage
