@@ -43,8 +43,8 @@ Note: Ensure NumPy is compatible with your setup. If you encounter issues with N
 Install Poppler and Tesseract as described in the Prerequisites section.
 
 #### Verify installations:
-`pdftoppm -v`  # Should return Poppler version
-`tesseract --version`  # Should return Tesseract version
+- `pdftoppm -v`  # Should return Poppler version
+- `tesseract --version`  # Should return Tesseract version
 
 
 ### Usage
