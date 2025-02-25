@@ -52,6 +52,7 @@ Install Poppler and Tesseract as described in the Prerequisites section.
 1. **Install Docker:**
 
 Download and install Docker Desktop from [Docker Hub](https://www.docker.com/products/docker-desktop/).
+
 2. **Clone the Repository:**
 `git clone https://github.com/your-username/PDFQuery.git`
 `cd PDFQuery`
