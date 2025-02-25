@@ -25,34 +25,35 @@ Before running the application, ensure you have the following installed:
 
 ### Python Dependencies
 Install the required Python packages using pip:
-pip install streamlit PyPDF2 pdf2image pytesseract pillow
+`pip install streamlit PyPDF2 pdf2image pytesseract pillow`
 
 
 Note: Ensure NumPy is compatible with your setup. If you encounter issues with NumPy 2.x, downgrade to a 1.x version:
-pip install "numpy<2"
+`pip install "numpy<2`
 ### Installation
 #### Clone the Repository:
-"git clone https://github.com/your-username/PDFQuery.git"
-"cd PDFQuery"
+`git clone https://github.com/your-username/PDFQuery.git`
+`cd PDFQuery`
 
 #### Install Python Dependencies:
 
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 (Optional: Create a requirements.txt file with the above packages if you want to include it.)
 #### Set Up System Dependencies:
 Install Poppler and Tesseract as described in the Prerequisites section.
 
 #### Verify installations:
-pdftoppm -v  # Should return Poppler version
-tesseract --version  # Should return Tesseract version
+`pdftoppm -v`  # Should return Poppler version
+`tesseract --version`  # Should return Tesseract version
 
 
 ### Usage
 #### Run the Application:
 
-streamlit run main.py
-This will launch the app in your default browser at http://localhost:8501.
+`streamlit run main.py`
+This will launch the app in your default browser at [streamlit](http://localhost:8501).
 #### Using the App:
+
 Enter the folder path containing your PDF files (e.g., C:/Users/YourName/pdfs).
 Type a search term and click "Search".
 View results with snippets of matching text.
